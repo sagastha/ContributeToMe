@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hero Section Hover Effect</title>
+	<link rel="stylesheet" type="text/css" href="abc.css">
+</head>
+<body>
+<div class="container">
+	<div class="column active">
+		<div class="content">
+			<div class="text">Robo Wars</div>
+			<div class="box">
+				<h2 style="color:white;">Robowars</h2>
+				<p style="color:white;"> about events 1</p>
+			</div>
+		</div>
+		<div class="bg bg1"></div>
+	</div>
+	<div class="column">
+		<div class="content">
+			<div class="text">Drone Race</div>
+			<div class="box">
+				<h2 style="color:white;">Drone Race</h2>
+				<p style="color:white;"> about events 2</p>
+			</div>
+		</div>
+		<div class="bg bg2"></div>
+	</div>
+	<div class="column">
+		<div class="content">
+			<div class="text">Web  Kriti</div>
+			<div class="box">
+				<h2 style="color:white;">Webkriti</h2>
+				<p style="color:white;"> about events 3</p>
+			</div>
+		</div>
+		<div class="bg bg3"></div>
+	</div>
+	<div class="column">
+		<div class="content">
+			<div class="text">Tech Athlon</div>
+			<div class="box">
+				<h2 style="color:white;">Techathlon</h2>
+				<p style="color:white;"> about events 4</p>
+			</div>
+		</div>
+		<div class="bg bg4"></div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+$(document).on('mouseover','.container .column',function(){
+	$(this).addClass('active').siblings().removeClass('active')
+})
+</script>
+</body>
+</html>
